@@ -23,8 +23,9 @@ export const showError = (errorMessage) => {
     errorMessage: errorMessage
   }
 }
-
+// this function is called when the Fetch post button is clicked
 export function fetchPosts (subreddit) {
+  // returns fat arrow function
   return (dispatch) => {
     dispatch(requestPosts())
     request
