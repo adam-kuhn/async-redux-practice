@@ -35,6 +35,7 @@ export function fetchPosts (subreddit) {
           dispatch(showError(err.message))
           return
         }
+        console.log(res.body)
         dispatch(receivePosts(res.body))
       })
   }
