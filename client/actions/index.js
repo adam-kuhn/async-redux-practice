@@ -3,6 +3,7 @@ import request from 'superagent'
 export const SHOW_ERROR = 'SHOW_ERROR'
 export const RECEIVE_POSTS = 'RECEIVE_POSTS'
 export const REQUEST_POSTS = 'REQUEST_POSTS'
+export const CLEAR_POSTS = 'CLEAR_POSTS'
 
 export const requestPosts = () => {
   return {
@@ -23,6 +24,15 @@ export const showError = (errorMessage) => {
     errorMessage: errorMessage
   }
 }
+
+export const clearPosts = () => {
+  return {
+    type: CLEAR_POSTS
+  }
+}
+
+// async actions
+
 // this function is called when the Fetch post button is clicked
 export function fetchPosts (subreddit) {
   // returns fat arrow function

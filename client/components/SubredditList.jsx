@@ -4,8 +4,11 @@ import {connect} from 'react-redux'
 
 import Post from './Post'
 
-const Subreddit = ({subreddits}) => (
+import {clearPosts} from '../actions'
+
+const Subreddit = ({subreddits, dispatch}) => (
   <div>
+    <button onClick={() => dispatch(clearPosts())}>Clear Posts</button>
     {subreddits.map((post, i) =>
       <Post
         key={i}

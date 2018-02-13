@@ -7,6 +7,7 @@ import WaitIndicator from './WaitIndicator'
 
 const App = () => (
   <div className='app'>
+  <h1>Search Reddit</h1>
     <ErrorMessage />
     <LoadSubreddit />
     <WaitIndicator />
