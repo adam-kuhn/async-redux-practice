@@ -4,6 +4,7 @@ import ErrorMessage from './ErrorMessage'
 import LoadSubreddit from './LoadSubreddit'
 import SubredditList from './SubredditList'
 import WaitIndicator from './WaitIndicator'
+import LoadComic from './LoadComic'
 
 const App = () => (
   <div className='app'>
@@ -12,6 +13,8 @@ const App = () => (
     <LoadSubreddit />
     <WaitIndicator />
     <SubredditList />
+    <h1>XKCD</h1>
+    <LoadComic />
   </div>
 )
 

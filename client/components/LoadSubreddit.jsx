@@ -1,7 +1,7 @@
 import React from 'react'
 import {connect} from 'react-redux'
 import {fetchPosts} from '../actions'
-// destructing dispatch from props, so we can just type dispatch, as below
+
 class LoadSubreddit extends React.Component {
   constructor (props) {
     super(props)
