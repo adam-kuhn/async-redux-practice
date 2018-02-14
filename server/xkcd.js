@@ -20,3 +20,4 @@ router.get('/comic/:comic', (req, res) => {
     )
 })
 
+module.exports = router
