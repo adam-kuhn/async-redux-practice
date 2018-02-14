@@ -1,0 +1,1 @@
+`http://xkcd.com/${comic}/info.0.json`

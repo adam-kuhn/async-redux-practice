@@ -70,7 +70,7 @@ export function fetchComic (comic) {
   return (dispatch) => {
     dispatch(requestPosts())
     request
-      .get(`http://xkcd.com/${comic}/info.0.json`)
+      .get(`/api/v1/xkcd/comic/${comic}`)
       .end((err, res) => {
         if (err) {
           dispatch(showError(err.message))
